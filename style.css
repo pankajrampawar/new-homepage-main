@@ -103,6 +103,11 @@ button {
     margin-top: 5px;
 }
 
+button:hover {
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
 /* content box -----> new content */
 
 .new {
@@ -325,11 +330,6 @@ ul {
         justify-content: space-between;
     }
 
-    button {
-        background-color: var(--Very-dark-blue);
-        color: var(--Off-white)
-    }
-
     .more-content {
         margin-top: 0px;
         overflow: auto;
@@ -354,9 +354,13 @@ ul {
     .more-read-number {
         font-size: 30px;
     }
-    .more-read-info, .information {
+    .more-read-info{
         line-height: normal;
         font-size: 15px;
+    }
+
+    .information {
+        line-height: 25px;
     }
     .more-read img {
         max-width: 100%;
