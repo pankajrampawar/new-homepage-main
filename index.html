@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet" href="style.css"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    </style>
+  </head>
+  <body>
+
+    <div class="overlay" id="overlay">
+      <div class="top-menu" id="topMenu">
+        <img src="./assets/images/icon-menu-close.svg" id="closeButton"/>
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- navigation bar -->
+    <nav class="nav-bar">
+      <img src="./assets/images/logo.svg" alt="Company Logo" />
+      <div class="menu">
+        <span>Home</span>
+        <span>New</span>
+        <span>Popular</span>
+        <span>Trending</span>
+        <span>Categories</span>
+        <div class="icon-menu"><img src="./assets/images/icon-menu.svg"/></div>
+      </div>
+    </nav>
+
+    <!-- Content box -->
+    <div class="content-box">
+                                  <!-- Main content-->
+      <div class="main-content">
+        <img
+          src="./assets/images/image-web-3-desktop.jpg"
+          alt="illustration"
+          class="main-image-desktop"
+        />
+        <img
+          src="./assets/images/image-web-3-mobile.jpg"
+          alt="illustration"
+          class="main-image-mobile"
+        />
+        <div class="main-article">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="info">
+            <p class="information">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <div><button>READ MORE</button></div>   
+          </div>
+        </div>
+      </div>
+
+                                     <!-- New Content-->
+      <div class="new">
+        <h2>New</h2>
+        <div class="new-article">
+          <h3 class="new-article-title">New Hydrogen VS Electric Cars</h3>
+          <p class="new-article-info">Will hydrogen-fueled cars ever catch up to
+            EVs?</p>
+        </div>
+        <div class="new-article">
+          <h3 class="new-article-title"> The Downsides of AI Artistry</h3>
+          <p class="new-article-info">What are the possible adverse effects of
+            on-demand AI image generation?</p>
+        </div>
+        <div class="new-article">
+          <h3 class="new-article-title">Is VC Funding Drying Up?</h3>
+          <p class="new-article-info">Private funding by
+            VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Content box -->
+    <div class="more-content">
+      <div class="more-read">
+        <div><img src="./assets/images/image-retro-pcs.jpg" alt="Retro PC" class="more-read-image" /></div>
+        <div class="more-read-content">
+          <h2 class="more-read-number">01</h2>
+          <h3 class="more-read-heading">Reviving
+            Retro PCs</h3>
+          <p class="more-read-info"> What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="more-read">
+        <div><img src="./assets/images/image-top-laptops.jpg" alt="Laptops" class="more-read-image" /></div>
+        <div class="more-read-content">
+          <h2 class="more-read-number"> 02</h2>
+          <h3 class="more-read-heading">Top 10
+            Laptops of 2022</h3>
+          <p class="more-read-info">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="more-read">
+        <div><img src="./assets/images/image-gaming-growth.jpg" alt="Gaming" class="more-read-image" /></div>
+        <div class="more-read-content">
+          <h2 class="more-read-number">03</h2>
+          <h3 class="more-read-heading">The Growth of Gaming</h3>
+          <p class="more-read-info">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- JS code -->
+    <script>
+      document.addEventListener('DOMContentLoaded',()=>{
+        const overlay = document.getElementById('overlay');
+        const menuIcon = document.querySelector('.icon-menu');
+        const closeButton = document.getElementById('closeButton');
+
+        menuIcon.addEventListener('click', ()=>{
+          overlay.style.display = 'block';
+        })
+
+        closeButton.addEventListener('click', ()=>{
+          overlay.style.display = 'none';
+        })
+      })
+    </script>
+  </body>
+</html>
