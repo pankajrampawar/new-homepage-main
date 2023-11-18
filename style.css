@@ -235,6 +235,10 @@ ul {
         align-items: center;
     }
 
+    .overlay {
+        display: none;
+    }
+
     .content {
         max-width: 1000px;
         max-height: 700px;
